@@ -1,0 +1,33 @@
+.introductorytext-index{
+  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat 50% bottom;
+  background-size: auto 100%;
+  text-align: center;
+  padding: 41px 30px;
+  @media (min-width:480px) and (max-width:768px) {
+    padding: 57px 0;
+    padding-bottom: 49px;
+  }
+  @media (min-width:768px) and (max-width:1200px) {
+    padding: 62px 0;
+    padding-bottom: 50px;
+  }
+    &__title {
+      .space-zero();
+      margin-bottom: 27px;
+      color: #000;
+      font-size: (@font-size-h2 - 3);
+      line-height: @line-height-h2;
+      font-weight: (@font-weight+300);
+      @media (min-width:480px) {
+        font-size: @font-size-h2;
+        margin-bottom: 28px;
+        font-size: @font-size-heading;
+      }
+    }
+    &__advertisement{
+    .space-zero();
+    font-size: @font-size;
+    line-height: (@line-height + 5);
+    font-weight: @font-weight;
+    }
+  }

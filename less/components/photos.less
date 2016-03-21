@@ -1,0 +1,39 @@
+.photo{
+  padding: 20px 20px;
+  padding-bottom: 18px;
+  border-top: 1px solid @border-color-form;
+  &__image{
+    margin-bottom: 18px;
+    background-size: cover;
+    height: 280px;
+    &--image1{
+      background: url("../img/photo-1-mobile.jpg") no-repeat 50% bottom;
+    }
+    &--image2{
+      background: url("../img/photo-2-mobile.jpg") no-repeat 50% bottom;
+    }
+    &--image3{
+      background: url("../img/photo-3-mobile.jpg") no-repeat 50% bottom;
+    }
+    &--image4{
+      background: url("../img/photo-4-mobile.jpg") no-repeat 50% bottom;
+    }
+  }
+  &__title{
+    line-height: (@line-height+3);
+    font-weight: (@font-weight+300);
+  }
+  &__text{
+    margin-bottom: 5px;
+    text-transform: none;
+    line-height: (@line-height+3);
+  }
+  &__like{
+    line-height: (@line-height+3);
+    font-weight: (@font-weight+300);
+  }
+}
+.photo:last-child{
+    border-bottom: 1px solid @border-color-form;
+}
+
