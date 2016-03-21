@@ -1,0 +1,32 @@
+html{
+  .space-zero();
+}
+body{
+  .space-zero();
+  background: @bg-color;
+  color: @text-color-20;
+  font-family: @font-family;
+  font-size: @font-size;
+  text-transform: uppercase;
+  font-weight: @font-weight;
+  }
+.layout-center-wrapper{
+  background: @bg-site-color;
+  box-shadow: 0px 5px 5px 0px rgba(0, 1, 1, 0.2);
+  min-width: 300px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.clearfix:after{
+  content: '';
+  display: table;
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+.mainheader{
+  text-align: center;
+  @media (min-width:480px){
+      padding: 0 0;
+    }
+}

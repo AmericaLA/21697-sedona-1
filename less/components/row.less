@@ -1,0 +1,167 @@
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  @media (min-width:480px) {
+    flex-direction: row;
+  }
+    &--sights{
+      background-color: @bg-color-dark;
+    }
+ }
+.cell {
+  width: 100%;
+  @media (min-width:480px) {
+    width: 33.33%;
+  }
+  &--town-features {
+    background-color: @bg-color-main;
+    padding: 38px 30px;
+    color: @text-color-100;
+    text-align: center;
+    @media (min-width:480px) and (max-width:768px){
+      padding: 48px 45px;
+      padding-bottom: 0;
+    }
+    @media (min-width:768px) {
+      padding: 55px 60px;
+    }
+  }
+  &--double-town {
+    min-height: 255px;
+    background: url("../img/photo-city.jpg") no-repeat 100% 54%;
+    background-size: cover;
+    @media (min-resolution: 1.5dppx) {
+      background: url("../img/photo-city@2x.jpg") no-repeat 100% 0;
+    }
+    @media (min-width:480px) {
+      width: 66.66%;
+    }
+  }
+    &--housing {
+      width: 100%;
+      background-color: @bg-color-dark-light;
+      text-align: left;
+      @media (min-width:480px) {
+        width: 33.33%;
+        text-align: center;
+      }
+    }
+    &--housing-home {
+      padding: 41px 21px;
+      padding-bottom: 0;
+      order: 1;
+      @media (min-width:480px) {
+        padding: 60px 45px;
+        order: 1;
+      }
+      @media (min-width:768px)  {
+        padding: 58px 60px;
+        padding-bottom: 82px;
+      }
+    }
+    &--housing-food {
+      padding: 30px 21px;
+      padding-right: 32px;
+      padding-bottom: 36px;
+      order: 3;
+      @media (min-width:480px) {
+        padding: 60px 49px;
+        order: 2;
+      }
+    }
+    &--housing-souvenir {
+      padding: 30px 21px;
+      padding-right: 32px;
+      padding-bottom: 0;
+      order: 2;
+      @media (min-width:480px) {
+        order: 3;
+      }
+  }
+    &--double-bridge {
+      order: 2;
+      min-height: 255px;
+      background: url("../img/photo-bridge.jpg") no-repeat 100% 53%;
+      background-size: cover;
+      @media (min-resolution: 1.5dppx) {
+        background: url("../img/photo-bridge@2x.jpg") no-repeat 100% 0;
+      }
+      @media (min-width:480px) {
+        order: 1;
+        width: 66.66%;
+      }
+    }
+    &--sights {
+      text-align: center;
+      padding: 25px 40px;
+      background-color: @bg-color-dark;
+      border-bottom: 1px solid @border-color-sights;
+      @media (min-width:480px) and (max-width:768px){
+        padding: 48px 40px;
+        padding-bottom: 23px;
+        border-bottom: none;
+      }
+    }
+    &--sights:last-child {
+      border-bottom: none;
+    }
+  }
+.cell {
+  box-sizing: border-box;
+    &__icon {
+      float: left;
+      fill: @bg-color-main;
+      height: 38px;
+      width: auto;
+      margin-left: -2px;
+      margin-top: -11px;
+      @media (min-width:480px) {
+        margin-top: 0;
+        float: none;
+        height: 75px;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+     @media (min-width:768px){
+        margin-bottom: 23px;
+      }
+  }
+    &__title {
+      margin-bottom: 12px;
+      color: @text-color-h2-000;
+      font-size: (@font-size-h2 - 3);
+      line-height: @line-height-h2;
+      font-weight: (@font-weight+300);
+      text-transform: uppercase;
+      @media (min-width:480px) {
+        margin-bottom: 20px;
+        font-size: @font-size-h2;
+      }
+    }
+    &__number {
+      margin-bottom: 18px;
+      @media (min-width:480px) {
+        margin-top: -10px;
+        margin-bottom: 22px;
+      }
+    }
+    &__text {
+      font-size: @font-size;
+      line-height: @line-height;
+      font-weight: @font-weight;
+      text-transform: uppercase;
+    }
+    &__colright {
+    margin-left: 50px;
+    @media (min-width:480px) {
+      margin-left: 0;
+    }
+  }
+}
+.cell--town-features .cell__title {
+  color:@text-color-100;
+}
+.cell-sights .cell__title {
+  width: 120px;
+}

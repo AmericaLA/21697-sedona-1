@@ -1,12 +1,221 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
+
   <head>
+    <title>Sedona</title>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
+    <div class="layout-center-wrapper">
+      <header class="mainheader clearfix">
+        <nav class="head-nav clearfix">
+          <svg class="icon-cross" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+        <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199
+	22.199,19.396 13.903,11.1 "/>
+          </svg>
+          <ul class="nav-menu-list nav-menu-list--left">
+            <li class="nav-menu-list__item nav-menu-list__item--info"><a href="#">Главная</a></li>
+            <li class="nav-menu-list__item nav-menu-list__item--photo"><a href="#">Фото и видео</a></li>
+          </ul>
+          <ul class="nav-menu-list nav-menu-list--right">
+            <li class="nav-menu-list__item nav-menu-list__item--hotels">
+              <a href="#">Форма отзыва</a>
+            </li>
+            <li class="nav-menu-list__item nav-menu-list__item--map nav-menu-list__item--bordernone">
+              <a href="#">HTML ACADEMY</a>
+            </li>
+          </ul>
+          <div class="header-logo">
+            <img src="img/logo-sedona-mobile.svg" alt="">
+          </div>
+          <div class="header-logo-line">
+            <svg class="icon-menu" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+              <g>
+	           <rect width="22.928" height="3.964"/>
+	           <rect y="9.009" width="22.928" height="3.964"/>
+	           <rect y="18.018" width="22.928" height="3.964"/>
+              </g>
+            </svg>
+          </div>
+        </nav>
+        <div class="sedona">
+          <img class="sedona__text" src="img/text-sedona-index.svg" alt="">
+        </div>
+      </header>
+      <main class="content">
+        <div class="introductorytext-index">
+          <h2 class="introductorytext-index__title">СЕДОНА — небольшой городок в АРИЗОНЕ,<br> заслуживающий большего!</h2>
+          <p class="introductorytext-index__advertisement">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+        </div>
+        <div class="row clearfix">
+          <div class="cell cell--town-features">
+            <h2 class="cell__title">
+              Настоящий
+              городок
+            </h2>
+            <p class="cell__number">
+              — №1 —
+            </p>
+            <p class="cell__text">
+              Седона не атракцион для туристов, там течет своя жизнь
+            </p>
+          </div>
+          <div class="cell  cell--double-town"></div>
+        </div>
+        <div class="row clearfix">
+          <div class="cell cell--housing cell--housing-home clearfix">
+            <img class="cell__icon" src="img/icon-house.svg" alt="">
+            <div class="cell__colright">
+              <h2 class="cell__title cell__title--icon">
+                Жилье
+              </h2>
+              <p class="cell__text">
+                Рекомендуем пожить в настоящем мотеле, все как в кино!
+              </p>
+            </div>
+          </div>
+          <div class="cell  cell--housing cell--housing-food clearfix">
+            <img class="cell__icon" src="img/icon-burger.svg" alt="">
+            <div class="cell__colright">
+              <h2 class="cell__title cell__title--icon">
+                Еда
+              </h2>
+              <p class="cell__text">
+                Всегда заказывай Фирменный бургер, Вы не разочаруетесь!
+              </p>
+            </div>
+          </div>
+          <div class="cell  cell--housing cell--housing-souvenir clearfix">
+            <img class="cell__icon" src="img/icon-gift.svg" alt="">
+            <div class="cell__colright">
+              <h2 class="cell__title cell__title--icon">
+                Сувениры
+              </h2>
+              <p class="cell__text">
+                Не только китайского, <br> но и местного производства!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row row--bridge clearfix">
+          <div class="cell cell--double-bridge"></div>
+          <div class="cell cell--town-features">
+            <h2 class="cell__title">
+              ТАМ ЕСТЬ Мост дьявола
+            </h2>
+            <p class="cell__number">
+              — №2 —
+            </p>
+            <p class="cell__text">
+              Да, по нему можно пройти!
+              Если конечно вы осмелитесь
+            </p>
+          </div>
+        </div>
+        <div class="row row--sights clearfix">
+          <div class="cell cell--sights">
+            <h2 class="cell__title">
+              НЕБОЛЬШАЯ ПЛОЩАДЬ
+            </h2>
+            <p class="cell__number">
+              — №3 —
+            </p>
+            <p class="cell__text">
+              Все достопримечательности находятся очень близко
+            </p>
+          </div>
+          <div class="cell cell--sights">
+            <h2 class="cell__title">
+              КРАСИВАЯ ДОРОГА
+            </h2>
+            <p class="cell__number">
+              — №4 —
+            </p>
+            <p class="cell__text">
+              Ехать в Седону из Лас-Вегаса совсем не скучно!
+            </p>
+          </div>
+          <div class="cell cell--sights">
+            <h2 class="cell__title">
+              МАЛО ТУРИСТОВ
+            </h2>
+            <p class="cell__number">
+              — №5 —
+            </p>
+            <p class="cell__text">
+              Большинство едит в гранд каньон и толпится там
+            </p>
+          </div>
+        </div>
+        <div class="hotel-search">
+          <div class="hotel-search__title">Заинтересовались?</div>
+          <p class="hotel-search__text">
+            Укажите предполагаемые даты поездки <br>
+            и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+          <div class="btn btn--search-hotels">Найти гостиницу</div>
+        </div>
+      </main>
+      <footer class="main-footer">
+          <div id="map" class="footer-map"></div>
+          <div class="footer-line clearfix">
+            <div class="cell cell--footer">
+              <p>#Visitsedona</p>
+            </div>
+            <div class="cell cell--footer">
+              <a class="icon-social" href="#">
+                <svg class="icon-social--twitter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                  <g id="W6EeEF_1_">
+                   <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <a class="icon-social" href="#">
+                <svg class="icon-social--facebook" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve"> <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+                </svg>
+              </a>
+              <a class="icon-social" href="#">
+                <svg class="icon-social--youtube" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve"> <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+                </svg>
+              </a>
+            </div>
+            <div class="cell cell--footer cell--design">
+              <span class="glukhanko">
+                Разработано
+              </span>
+              <a class="htmlacademy">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+              </a>
+            </div>
+          </div>
+        </footer>
 
+  <script>
+  var myMap;
+
+  // Дождёмся загрузки API и готовности DOM.
+  ymaps.ready(init);
+
+  function init () {
+  // Создание экземпляра карты и его          привязка к контейнеру с
+  // заданным id ("map").
+  myMap = new ymaps.Map('map', {
+  // При инициализации карты обязательно нужно указать
+  // её центр и коэффициент масштабирования.
+  center: [34.8573, -111.795], // Седона
+  zoom: 13,
+  controls: ['zoomControl']
+  });
+  }
+  </script>
+    </div>
   </body>
 </html>
+
