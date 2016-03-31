@@ -27,8 +27,9 @@
     color: @text-color-100;
     text-align: center;
     @media (min-width:480px) and (max-width:768px){
-      padding: 48px 45px;
+      padding: 30px 45px;
       padding-bottom: 0;
+      order: 2;
     }
     @media (min-width:768px) {
       padding: 55px 60px;
@@ -60,11 +61,11 @@
       order: 1;
       @media (min-width:480px) {
         padding: 60px 45px;
+        padding-bottom: 50px;
         order: 1;
       }
       @media (min-width:768px)  {
         padding: 58px 60px;
-        padding-bottom: 82px;
       }
     }
     &--housing-food {
@@ -74,6 +75,7 @@
       order: 3;
       @media (min-width:480px) {
         padding: 60px 49px;
+        padding-bottom: 50px;
         order: 2;
       }
     }
@@ -82,7 +84,9 @@
       padding-bottom: 0;
       order: 2;
       @media (min-width:480px) {
-        order: 3;
+       padding: 60px 21px;
+       padding-bottom: 50px;
+       order: 3;
       }
   }
     &--double-bridge {
@@ -105,7 +109,7 @@
       background-color: @bg-color-dark;
       border-bottom: 1px solid @border-color-sights;
       @media (min-width:480px) and (max-width:768px){
-        padding: 48px 40px;
+        padding: 20px 40px;
         padding-bottom: 23px;
         border-bottom: none;
       }
@@ -127,7 +131,7 @@
         float: none;
         height: 75px;
         margin: 0;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
       }
      @media (min-width:768px){
         margin-bottom: 23px;
@@ -142,7 +146,7 @@
       text-transform: uppercase;
       @media (min-width:480px) {
         margin-bottom: 20px;
-        font-size: @font-size-h2;
+        font-size: @font-size-heading;
       }
     }
     &__number {
