@@ -3,6 +3,7 @@
   <head>
     <title>Sedona</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css"/>
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css"/>
@@ -50,35 +51,38 @@
           <p class="introductorytext-form__advertisement">Помогите нашим отелям стать лучше! Оставьте отзыв о них, <br> а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="form" action="/auth" method="post">
-          <div class="form-block">
-            <div class="form-block__title">Представьтесь, пожалуйста:</div>
-            <div class="form-block__row clearfix">
+          <div class="form-block form-block--name">
+            <div class="form-block__title form-block__title--name form-block__title--name-mobdesctop">Представьтесь, пожалуйста:</div>
+            <div class="form-block__title form-block__title--name form-block__title--name-tablet">Представьтесь:</div>
+            <div class="form-block__row form-block__title--name  form-block__row--name clearfix">
               <label class="form-block__text">Имя:</label>
               <input class="form-block__input" type="text" name="">
             </div>
-            <div class="form-block__row clearfix">
+            <div class="form-block__row form-block__row--name clearfix">
               <label class="form-block__text">Фамилия:</label>
               <input class="form-block__input" type="text" name="">
             </div>
-            <div class="form-block__row clearfix">
+            <div class="form-block__row form-block__row--name clearfix">
               <label class="form-block__text">Отчество:</label>
               <input class="form-block__input" type="text" name="">
             </div>
           </div>
-          <div class="form-block">
-            <div class="form-block__title">Контанктная информация:</div>
-            <div class="form-block__row clearfix">
-              <label class="form-block__text form-block__text--contacts">Контактный телефон:</label>
-              <input class="form-block__input form-block__input--contacts" type="text" name="">
-              <div class="form-block__errow"></div>
-            </div>
-            <div class="form-block__row clearfix">
-              <label class="form-block__text form-block__text--contacts">Электронная почта:</label>
-              <input class="form-block__input form-block__input--contacts" type="text" name="">
+          <div class="form-block form-block--contacts">
+            <div class="form-block__title form-block__title--contacts">Контанктная информация:</div>
+            <div class="form-block__wrapper">
+              <div class="form-block__row form-block__row--contacts flex">
+                <label class="form-block__text form-block__text--contacts">Контактный телефон:</label>
+                <input class="form-block__input form-block__input--contacts" type="text" name="">
+                <div class="form-block__errow">Ошибка, перепроверьте номер</div>
+              </div>
+              <div class="form-block__row form-block__row--contacts">
+                <label class="form-block__text form-block__text--contacts">Электронная почта:</label>
+                <input class="form-block__input form-block__input--contacts" type="text" name="">
+              </div>
             </div>
           </div>
-          <div class="form-block">
-            <div class="form-block__title">Ваше общее впечатление:</div>
+          <div class="form-block form-block--opinion">
+            <div class="form-block__title form-block__title--opinion ">Ваше общее впечатление:</div>
             <div class="form-block__row radio clearfix">
               <input class="radio__input" type="radio" name="opinion" id="positive" value="1">
               <label class="radio__opinion" for="positive" >Скорее положительное</label>
@@ -92,30 +96,33 @@
               <label class="radio__opinion" for="negative">Затрудняюсь ответить</label>
             </div>
           </div>
-          <div class="form-block">
+          <div class="form-block form-block--sights">
             <div class="form-block__title">Посещенные <br> достопримечательности:</div>
-            <div class="form-block__row checkbox clearfix">
-               <input class="checkbox__input" type="checkbox" name="" id="bridge">
-               <label class="checkbox__name" for="bridge">Мост Дьявола</label>
-            </div>
-            <div class="form-block__row checkbox clearfix">
-              <input class="checkbox__input" type="checkbox" name="" id="park">
-              <label class="checkbox__name" for="park">Слайд-парк</label>
-            </div>
-            <div class="form-block__row checkbox clearfix">
-              <input class="checkbox__input" type="checkbox" name="" id="bell">
-              <label class="checkbox__name" for="bell">Гора-Колокол</label>
-            </div>
-            <div class="form-block__row checkbox clearfix">
-              <input class="checkbox__input" type="checkbox" name="" id="mountain">
-              <label class="checkbox__name" for="mountain">Красные скалы</label>
+            <div class="form-block__wrap flex flex--sights">
+              <div class="form-block__row checkbox">
+                 <input class="checkbox__input" type="checkbox" name="" id="bridge">
+                 <label class="checkbox__name" for="bridge">Мост Дьявола</label>
+              </div>
+              <div class="form-block__row checkbox">
+                <input class="checkbox__input" type="checkbox" name="" id="park">
+                <label class="checkbox__name" for="park">Слайд-парк</label>
+              </div>
+              <div class="form-block__row checkbox">
+                <input class="checkbox__input" type="checkbox" name="" id="bell">
+                <label class="checkbox__name" for="bell">Гора-Колокол</label>
+              </div>
+              <div class="form-block__row checkbox">
+                <input class="checkbox__input" type="checkbox" name="" id="mountain">
+                <label class="checkbox__name" for="mountain">Красные скалы</label>
+              </div>
             </div>
           </div>
-          <div class="form-block review clearfix">
+          <div class="form-block form-block--review">
             <div class="form-block__title">Опишите свои эмоции</div>
-            <div class="form-block__row review-info">
+            <div class="form-block__row flex">
               <textarea class="form-block__textarea" rows="10" calls="20" name="text" placeholder='Опишите подробно свои восторги'></textarea>
               <input class="btn btn--opinion" type="submit" value="Отправить отзыв">
+              <div class="form-block__note">*-обязательные поля</div>
             </div>
           </div>
         </form>

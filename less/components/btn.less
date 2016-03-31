@@ -1,21 +1,30 @@
 .btn {
+  display: block;
+  width: 100%;
   box-sizing: border-box;
   padding:16px 0;
-  font-size: @font-size-heading;
+  font-size: @font-size-input;
   font-weight: (@font-weight+300);
-  color: @text-color-heading-10;
+  color: @text-color-100;
   background-color: @bg-color-main;
   text-decoration: none;
   display: block;
   border: none;
+  text-transform: uppercase;
   @media (min-width:480px) {
-    max-width: 459px;
-    margin: 0 auto;
+    max-width: 325px;
    }
-    &--search-hotels {
-      display: block;
-      @media (min-width:480px) {
-        color: @text-color-100;
-    }
+  @media (min-width:768px) {
+    max-width: 459px;
+   }
+  &--search-hotels{
+    font-size: @font-size-heading;
+    line-height: @line-height-heading;
+    text-transform: uppercase;
+    @media (min-width:480px) {
+      max-width: 458px;
+      margin: 0 auto;
+   }
   }
 }
+
